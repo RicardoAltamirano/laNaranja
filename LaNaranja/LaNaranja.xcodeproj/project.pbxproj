@@ -15,6 +15,9 @@
 		2770CA6920376F9D00F9BDEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2770CA6720376F9D00F9BDEB /* LaunchScreen.storyboard */; };
 		2770CA7420376F9D00F9BDEB /* LaNaranjaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2770CA7320376F9D00F9BDEB /* LaNaranjaTests.swift */; };
 		2770CA7F20376F9D00F9BDEB /* LaNaranjaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2770CA7E20376F9D00F9BDEB /* LaNaranjaUITests.swift */; };
+		578853362050B2E9001082FA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578853352050B2E9001082FA /* LoginViewController.swift */; };
+		5788533820510D95001082FA /* n2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5788533720510D94001082FA /* n2.png */; };
+		5788533A20511021001082FA /* n3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5788533920511021001082FA /* n3.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		2770CA7A20376F9D00F9BDEB /* LaNaranjaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaNaranjaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2770CA7E20376F9D00F9BDEB /* LaNaranjaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaNaranjaUITests.swift; sourceTree = "<group>"; };
 		2770CA8020376F9D00F9BDEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		578853352050B2E9001082FA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5788533720510D94001082FA /* n2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = n2.png; path = ../../../../../Downloads/n2.png; sourceTree = "<group>"; };
+		5788533920511021001082FA /* n3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = n3.png; path = ../../../../../Downloads/n3.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +109,11 @@
 				2770CA5E20376F9D00F9BDEB /* FirstViewController.swift */,
 				2770CA6020376F9D00F9BDEB /* SecondViewController.swift */,
 				2770CA6220376F9D00F9BDEB /* Main.storyboard */,
+				578853352050B2E9001082FA /* LoginViewController.swift */,
 				2770CA6520376F9D00F9BDEB /* Assets.xcassets */,
 				2770CA6720376F9D00F9BDEB /* LaunchScreen.storyboard */,
+				5788533920511021001082FA /* n3.png */,
+				5788533720510D94001082FA /* n2.png */,
 				2770CA6A20376F9D00F9BDEB /* Info.plist */,
 			);
 			path = LaNaranja;
@@ -235,7 +244,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5788533A20511021001082FA /* n3.png in Resources */,
 				2770CA6920376F9D00F9BDEB /* LaunchScreen.storyboard in Resources */,
+				5788533820510D95001082FA /* n2.png in Resources */,
 				2770CA6620376F9D00F9BDEB /* Assets.xcassets in Resources */,
 				2770CA6420376F9D00F9BDEB /* Main.storyboard in Resources */,
 			);
@@ -262,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				578853362050B2E9001082FA /* LoginViewController.swift in Sources */,
 				2770CA6120376F9D00F9BDEB /* SecondViewController.swift in Sources */,
 				2770CA5D20376F9D00F9BDEB /* AppDelegate.swift in Sources */,
 				2770CA5F20376F9D00F9BDEB /* FirstViewController.swift in Sources */,
@@ -431,13 +443,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6U77D6Q8QB;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LaNaranja/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ricardoaltamirano.LaNaranja;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -446,13 +459,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6U77D6Q8QB;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LaNaranja/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ricardoaltamirano.LaNaranja;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
