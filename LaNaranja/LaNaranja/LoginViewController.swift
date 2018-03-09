@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var usuarioTextField: UITextField!
@@ -41,16 +42,19 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                         if let convertedJsonIntoDict = try JSONSerialization.jsonObject(with: data!, options: []) as? NSArray {
                             // Print out dictionary
                             //print(convertedJsonIntoDict)
-                            
+                            var correo = ""
+                            var estado = 0
+                            var idUsuario = ""
+                            var nombre = ""
                             // Obtenemos el varlor por key de JSON
-                            let usuario = (convertedJsonIntoDict[0] as! NSDictionary)["correo"] as? String
+                            correo = ((convertedJsonIntoDict[0] as! NSDictionary)["correo"] as? String)!
                             //let password = (convertedJsonIntoDict[0] as! NSDictionary)["password"] as? String
-                            let estado = (convertedJsonIntoDict[0] as! NSDictionary)["estado"] as? Int64
+                            estado = ((convertedJsonIntoDict[0] as! NSDictionary)["estado"] as? Int)!
                             //print("Valores: = \(usuario!),\(password!),\(estado!)")
-                            let idUsuario = (convertedJsonIntoDict[0] as! NSDictionary)["idUsuario"] as? Int64
-                            let nombre = (convertedJsonIntoDict[0] as! NSDictionary)["nombre"] as? String
-                            
-                            switch estado! {
+                            idUsuario = ((convertedJsonIntoDict[0] as! NSDictionary)["idUsuario"] as? String)!
+                            nombre = ((convertedJsonIntoDict[0] as! NSDictionary)["nombre"] as? String)!
+                            print ("Correo = \(correo), estado = \(estado), idUsuario = \(idUsuario),nombre = \(nombre),")
+                            switch estado {
                             case 0:
                                 DispatchQueue.main.async {
                                     // Alert Controller Code Here
@@ -77,6 +81,18 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                                     self.present(alert, animated: true, completion: nil)
                                     //appDelegate.window?.rootViewController = initialController
                                     //appDelegate.window?.makeKeyAndVisible()
+                                    
+                                    let context = self.getContext()
+                                    let usuario = NSEntityDescription.insertNewObject(forEntityName: "Usuario", into: context)
+                                    usuario.setValue(correo, forKey: "correo")
+                                    usuario.setValue(nombre, forKey: "nombre")
+                                    usuario.setValue(Int(idUsuario), forKey: "idUsuario")
+                                    
+                                    do{
+                                        try context.save()
+                                    }catch{
+                                        print("Error al almacenar")
+                                    }
                                 }
                                 break
                             
@@ -112,6 +128,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         contraTextField.becomeFirstResponder()
         return(true)
     }
-
+    
+    func getContext() -> NSManagedObjectContext{
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        return appDelegate.persistentContainer.viewContext
+    }
 
 }

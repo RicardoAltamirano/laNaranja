@@ -15,10 +15,11 @@
 		2770CA6920376F9D00F9BDEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2770CA6720376F9D00F9BDEB /* LaunchScreen.storyboard */; };
 		2770CA7420376F9D00F9BDEB /* LaNaranjaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2770CA7320376F9D00F9BDEB /* LaNaranjaTests.swift */; };
 		2770CA7F20376F9D00F9BDEB /* LaNaranjaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2770CA7E20376F9D00F9BDEB /* LaNaranjaUITests.swift */; };
+		27F2E9F52053033A001BAD39 /* LaNaranja.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 27F2E9F32053033A001BAD39 /* LaNaranja.xcdatamodeld */; };
+		27F2E9F820530680001BAD39 /* n3.png in Resources */ = {isa = PBXBuildFile; fileRef = 27F2E9F62053067F001BAD39 /* n3.png */; };
+		27F2E9F920530680001BAD39 /* n2.png in Resources */ = {isa = PBXBuildFile; fileRef = 27F2E9F720530680001BAD39 /* n2.png */; };
 		57067A042052F6B8003A398B /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 57067A032052F6B8003A398B /* Podfile */; };
 		578853362050B2E9001082FA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578853352050B2E9001082FA /* LoginViewController.swift */; };
-		5788533820510D95001082FA /* n2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5788533720510D94001082FA /* n2.png */; };
-		5788533A20511021001082FA /* n3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5788533920511021001082FA /* n3.png */; };
 		57E9C7D82052F83D000FA0FA /* MapaTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E9C7D72052F83D000FA0FA /* MapaTabBar.swift */; };
 		57E9C7DA20530020000FA0FA /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E9C7D920530020000FA0FA /* TabBar.swift */; };
 		BCC9CB59BE0CE73864422FBA /* libPods-LaNaranja.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BCBAF463742D8B58E7FF7F5 /* libPods-LaNaranja.a */; };
@@ -57,10 +58,11 @@
 		2770CA7A20376F9D00F9BDEB /* LaNaranjaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaNaranjaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2770CA7E20376F9D00F9BDEB /* LaNaranjaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaNaranjaUITests.swift; sourceTree = "<group>"; };
 		2770CA8020376F9D00F9BDEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27F2E9F42053033A001BAD39 /* LaNaranja.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LaNaranja.xcdatamodel; sourceTree = "<group>"; };
+		27F2E9F62053067F001BAD39 /* n3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = n3.png; sourceTree = "<group>"; };
+		27F2E9F720530680001BAD39 /* n2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = n2.png; sourceTree = "<group>"; };
 		57067A032052F6B8003A398B /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		578853352050B2E9001082FA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		5788533720510D94001082FA /* n2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = n2.png; path = ../../../../../Downloads/n2.png; sourceTree = "<group>"; };
-		5788533920511021001082FA /* n3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = n3.png; path = ../../../../../Downloads/n3.png; sourceTree = "<group>"; };
 		57E9C7D72052F83D000FA0FA /* MapaTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapaTabBar.swift; sourceTree = "<group>"; };
 		57E9C7D920530020000FA0FA /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		6BCBAF463742D8B58E7FF7F5 /* libPods-LaNaranja.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LaNaranja.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,9 +130,10 @@
 				578853352050B2E9001082FA /* LoginViewController.swift */,
 				2770CA6520376F9D00F9BDEB /* Assets.xcassets */,
 				2770CA6720376F9D00F9BDEB /* LaunchScreen.storyboard */,
-				5788533920511021001082FA /* n3.png */,
-				5788533720510D94001082FA /* n2.png */,
+				27F2E9F720530680001BAD39 /* n2.png */,
+				27F2E9F62053067F001BAD39 /* n3.png */,
 				2770CA6A20376F9D00F9BDEB /* Info.plist */,
+				27F2E9F32053033A001BAD39 /* LaNaranja.xcdatamodeld */,
 			);
 			path = LaNaranja;
 			sourceTree = "<group>";
@@ -281,9 +284,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				57067A042052F6B8003A398B /* Podfile in Resources */,
-				5788533A20511021001082FA /* n3.png in Resources */,
+				27F2E9F920530680001BAD39 /* n2.png in Resources */,
+				27F2E9F820530680001BAD39 /* n3.png in Resources */,
 				2770CA6920376F9D00F9BDEB /* LaunchScreen.storyboard in Resources */,
-				5788533820510D95001082FA /* n2.png in Resources */,
 				2770CA6620376F9D00F9BDEB /* Assets.xcassets in Resources */,
 				2770CA6420376F9D00F9BDEB /* Main.storyboard in Resources */,
 			);
@@ -366,6 +369,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27F2E9F52053033A001BAD39 /* LaNaranja.xcdatamodeld in Sources */,
 				578853362050B2E9001082FA /* LoginViewController.swift in Sources */,
 				2770CA6120376F9D00F9BDEB /* SecondViewController.swift in Sources */,
 				57E9C7D82052F83D000FA0FA /* MapaTabBar.swift in Sources */,
@@ -673,6 +677,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		27F2E9F32053033A001BAD39 /* LaNaranja.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				27F2E9F42053033A001BAD39 /* LaNaranja.xcdatamodel */,
+			);
+			currentVersion = 27F2E9F42053033A001BAD39 /* LaNaranja.xcdatamodel */;
+			path = LaNaranja.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2770CA5120376F9D00F9BDEB /* Project object */;
 }
