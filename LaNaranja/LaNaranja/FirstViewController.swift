@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import CoreData
 class FirstViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -18,6 +18,29 @@ class FirstViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+
+    func consultar(){
+        _ = getContext()
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Usuario")
+        
+        do{
+            let results = try getContext().fetch(fetchRequest)
+            if results.count > 0{
+                for result in results as! [NSManagedObject]{
+                    print(result.value(forKey: "nombre")!)
+                    print(result.value(forKey: "correo")!)
+                    print(result.value(forKey: "idUsuario")!)
+                }
+            }
+        }catch{
+            print("Error en cosulta")
+        }
+    }
+    
+    func getContext() -> NSManagedObjectContext{
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        return appDelegate.persistentContainer.viewContext
     }
 
 

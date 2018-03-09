@@ -65,7 +65,16 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                                 }
                                 break
                             case 1: //Sí se encontró
-                                
+                                let context = self.getContext()
+                                let usuario = NSEntityDescription.insertNewObject(forEntityName: "Usuario", into: context)
+                                usuario.setValue(correo, forKey: "correo")
+                                usuario.setValue(nombre, forKey: "nombre")
+                                usuario.setValue(Int(idUsuario), forKey: "idUsuario")
+                                do{
+                                    try context.save()
+                                }catch{
+                                    print("Error al almacenar")
+                                }
                                 DispatchQueue.main.async {
                                     
                                     //let appDelegate = UIApplication.shared.delegate! as! AppDelegate
@@ -82,17 +91,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                                     //appDelegate.window?.rootViewController = initialController
                                     //appDelegate.window?.makeKeyAndVisible()
                                     
-                                    let context = self.getContext()
-                                    let usuario = NSEntityDescription.insertNewObject(forEntityName: "Usuario", into: context)
-                                    usuario.setValue(correo, forKey: "correo")
-                                    usuario.setValue(nombre, forKey: "nombre")
-                                    usuario.setValue(Int(idUsuario), forKey: "idUsuario")
-                                    
-                                    do{
-                                        try context.save()
-                                    }catch{
-                                        print("Error al almacenar")
-                                    }
                                 }
                                 break
                             
