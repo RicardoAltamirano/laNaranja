@@ -468,11 +468,7 @@
         <image name="pedidos" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-<<<<<<< HEAD
         <segue reference="u7Y-xg-7CH"/>
-=======
-        <segue reference="CRG-jn-9yp"/>
->>>>>>> db71e2aaf68396f6ee15a3d4254522fcfe4e114c
         <segue reference="C2W-jO-mHZ"/>
         <segue reference="mpr-E9-H6J"/>
     </inferredMetricsTieBreakers>
