@@ -15,9 +15,13 @@
 		2770CA6920376F9D00F9BDEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2770CA6720376F9D00F9BDEB /* LaunchScreen.storyboard */; };
 		2770CA7420376F9D00F9BDEB /* LaNaranjaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2770CA7320376F9D00F9BDEB /* LaNaranjaTests.swift */; };
 		2770CA7F20376F9D00F9BDEB /* LaNaranjaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2770CA7E20376F9D00F9BDEB /* LaNaranjaUITests.swift */; };
+		57067A042052F6B8003A398B /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 57067A032052F6B8003A398B /* Podfile */; };
 		578853362050B2E9001082FA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578853352050B2E9001082FA /* LoginViewController.swift */; };
 		5788533820510D95001082FA /* n2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5788533720510D94001082FA /* n2.png */; };
 		5788533A20511021001082FA /* n3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5788533920511021001082FA /* n3.png */; };
+		57E9C7D82052F83D000FA0FA /* MapaTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E9C7D72052F83D000FA0FA /* MapaTabBar.swift */; };
+		57E9C7DA20530020000FA0FA /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E9C7D920530020000FA0FA /* TabBar.swift */; };
+		BCC9CB59BE0CE73864422FBA /* libPods-LaNaranja.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BCBAF463742D8B58E7FF7F5 /* libPods-LaNaranja.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25A51177653BC6ED496C0C4C /* Pods-LaNaranja.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaNaranja.release.xcconfig"; path = "Pods/Target Support Files/Pods-LaNaranja/Pods-LaNaranja.release.xcconfig"; sourceTree = "<group>"; };
 		2770CA5920376F9D00F9BDEB /* LaNaranja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaNaranja.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2770CA5C20376F9D00F9BDEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2770CA5E20376F9D00F9BDEB /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -52,9 +57,14 @@
 		2770CA7A20376F9D00F9BDEB /* LaNaranjaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaNaranjaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2770CA7E20376F9D00F9BDEB /* LaNaranjaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaNaranjaUITests.swift; sourceTree = "<group>"; };
 		2770CA8020376F9D00F9BDEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57067A032052F6B8003A398B /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		578853352050B2E9001082FA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5788533720510D94001082FA /* n2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = n2.png; path = ../../../../../Downloads/n2.png; sourceTree = "<group>"; };
 		5788533920511021001082FA /* n3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = n3.png; path = ../../../../../Downloads/n3.png; sourceTree = "<group>"; };
+		57E9C7D72052F83D000FA0FA /* MapaTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapaTabBar.swift; sourceTree = "<group>"; };
+		57E9C7D920530020000FA0FA /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		6BCBAF463742D8B58E7FF7F5 /* libPods-LaNaranja.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LaNaranja.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6EA3C50E82884A7142E1C2E /* Pods-LaNaranja.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaNaranja.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LaNaranja/Pods-LaNaranja.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCC9CB59BE0CE73864422FBA /* libPods-LaNaranja.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,10 +96,13 @@
 		2770CA5020376F9D00F9BDEB = {
 			isa = PBXGroup;
 			children = (
+				57067A032052F6B8003A398B /* Podfile */,
 				2770CA5B20376F9D00F9BDEB /* LaNaranja */,
 				2770CA7220376F9D00F9BDEB /* LaNaranjaTests */,
 				2770CA7D20376F9D00F9BDEB /* LaNaranjaUITests */,
 				2770CA5A20376F9D00F9BDEB /* Products */,
+				FE6607939C7DA48727C09413 /* Pods */,
+				48C555051BACD02F24084DEC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +123,8 @@
 				2770CA5E20376F9D00F9BDEB /* FirstViewController.swift */,
 				2770CA6020376F9D00F9BDEB /* SecondViewController.swift */,
 				2770CA6220376F9D00F9BDEB /* Main.storyboard */,
+				57E9C7D920530020000FA0FA /* TabBar.swift */,
+				57E9C7D72052F83D000FA0FA /* MapaTabBar.swift */,
 				578853352050B2E9001082FA /* LoginViewController.swift */,
 				2770CA6520376F9D00F9BDEB /* Assets.xcassets */,
 				2770CA6720376F9D00F9BDEB /* LaunchScreen.storyboard */,
@@ -137,6 +153,23 @@
 			path = LaNaranjaUITests;
 			sourceTree = "<group>";
 		};
+		48C555051BACD02F24084DEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6BCBAF463742D8B58E7FF7F5 /* libPods-LaNaranja.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE6607939C7DA48727C09413 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A6EA3C50E82884A7142E1C2E /* Pods-LaNaranja.debug.xcconfig */,
+				25A51177653BC6ED496C0C4C /* Pods-LaNaranja.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +177,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2770CA8320376F9D00F9BDEB /* Build configuration list for PBXNativeTarget "LaNaranja" */;
 			buildPhases = (
+				45452DD97FE1AFAD3AC7F528 /* [CP] Check Pods Manifest.lock */,
 				2770CA5520376F9D00F9BDEB /* Sources */,
 				2770CA5620376F9D00F9BDEB /* Frameworks */,
 				2770CA5720376F9D00F9BDEB /* Resources */,
+				AABD3E6326DF09ECE3D96A8B /* [CP] Embed Pods Frameworks */,
+				B770054BE74D82F54439426E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,6 +280,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57067A042052F6B8003A398B /* Podfile in Resources */,
 				5788533A20511021001082FA /* n3.png in Resources */,
 				2770CA6920376F9D00F9BDEB /* LaunchScreen.storyboard in Resources */,
 				5788533820510D95001082FA /* n2.png in Resources */,
@@ -268,6 +305,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		45452DD97FE1AFAD3AC7F528 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LaNaranja-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AABD3E6326DF09ECE3D96A8B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LaNaranja/Pods-LaNaranja-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B770054BE74D82F54439426E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LaNaranja/Pods-LaNaranja-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LaNaranja/Pods-LaNaranja-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2770CA5520376F9D00F9BDEB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -275,6 +368,8 @@
 			files = (
 				578853362050B2E9001082FA /* LoginViewController.swift in Sources */,
 				2770CA6120376F9D00F9BDEB /* SecondViewController.swift in Sources */,
+				57E9C7D82052F83D000FA0FA /* MapaTabBar.swift in Sources */,
+				57E9C7DA20530020000FA0FA /* TabBar.swift in Sources */,
 				2770CA5D20376F9D00F9BDEB /* AppDelegate.swift in Sources */,
 				2770CA5F20376F9D00F9BDEB /* FirstViewController.swift in Sources */,
 			);
@@ -440,6 +535,7 @@
 		};
 		2770CA8420376F9D00F9BDEB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6EA3C50E82884A7142E1C2E /* Pods-LaNaranja.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -456,6 +552,7 @@
 		};
 		2770CA8520376F9D00F9BDEB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25A51177653BC6ED496C0C4C /* Pods-LaNaranja.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
