@@ -388,7 +388,6 @@
                                 </state>
                                 <connections>
                                     <action selector="Ingresar:" destination="ulc-J3-OKJ" eventType="touchUpInside" id="YvU-Nj-mIr"/>
-                                    <segue destination="49e-Tb-3d3" kind="show" id="7ye-VQ-Ci6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mSr-GI-jgq">
@@ -469,7 +468,8 @@
         <image name="pedidos" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="7ye-VQ-Ci6"/>
+        <segue reference="u7Y-xg-7CH"/>
+        <segue reference="C2W-jO-mHZ"/>
         <segue reference="mpr-E9-H6J"/>
     </inferredMetricsTieBreakers>
 </document>
